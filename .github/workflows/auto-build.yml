@@ -25,7 +25,7 @@ jobs:
       - name: switch branch
         run: |
           git checkout -b release
-          rm -rf ./.github ./readme.md ./blocklist-build.sh
+          rm -rf ./.github ./readme.txt ./blocklist-build.sh
 
       - name: push
         run: |

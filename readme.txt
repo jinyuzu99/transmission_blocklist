@@ -2,8 +2,8 @@ transmission blocklist
 
 release
 
-- https://github.com/sayomelu/transmission_blocklist/raw/release/blocklist.gz
-- https://cdn.jsdelivr.net/gh/sayomelu/transmission_blocklist@release/blocklist.gz
+- https://github.com/anyuzu99/transmission_blocklist/raw/release/blocklist.gz
+- https://cdn.jsdelivr.net/gh/anyuzu99/transmission_blocklist@release/blocklist.gz
 
 thank
 

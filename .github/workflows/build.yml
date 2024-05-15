@@ -1,4 +1,4 @@
-name: auto-build
+name: build
 on:
   push:
     branches:
@@ -16,21 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: github checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: build
         run: |
-          ./blocklist-build.sh
+          ./build.sh
 
       - name: switch branch
         run: |
           git checkout -b release
-          rm -rf ./.github ./readme.txt ./blocklist-build.sh
+          rm -rf ./.github ./readme.md ./build.sh
 
       - name: push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m 'auto build'
+          git commit -m 'Weekly Build'
           git push -f origin release

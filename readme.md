@@ -1,6 +1,6 @@
 # Transmission Blocklist
 
-Using [GitHub Actions](./.github/workflows/auto-build.yml) to generate blocklist for [Transmission](https://transmissionbt.com), available for all platforms.
+Using [GitHub Actions](./.github/workflows/auto-build.yml) to  generate blocklist weekly for [Transmission](https://transmissionbt.com), available for all platforms.
 
 ## Release
 

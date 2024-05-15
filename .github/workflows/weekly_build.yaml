@@ -1,4 +1,4 @@
-name: build
+name: Weekly Build
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
       - main
 
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * 0' # weekly
 
 jobs:
   pull:
@@ -29,8 +29,8 @@ jobs:
 
       - name: push
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add .
           git commit -m 'Weekly Build'
           git push -f origin release

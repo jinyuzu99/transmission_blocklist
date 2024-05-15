@@ -5,4 +5,4 @@ curl -s https://www.iblocklist.com/lists.json | \
     xargs wget -O - | \
     gunzip | \
     egrep -v '^#' | \
-    gzip > blocklist.gz
+    gzip --best > transmission_blocklist.gz

@@ -1,5 +1,7 @@
 # Transmission Blocklist
 
+Many torrent clients have an option to set a Blocklist, which helps protect you from getting caught and having the DMCA send a letter/email.
+
 Using [GitHub Actions](./.github/workflows/auto-build.yml) to  generate blocklist weekly for [Transmission](https://transmissionbt.com), available for all platforms.
 
 ## Release
